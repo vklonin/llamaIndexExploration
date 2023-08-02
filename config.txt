@@ -1,0 +1,6 @@
+[variables]
+owner=Scorpibear
+repo=chegura
+file=js
+filter_dirs=[]
+branch=master
