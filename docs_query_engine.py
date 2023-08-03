@@ -3,6 +3,8 @@ import pickle
 
 from llama_index import download_loader, GPTVectorStoreIndex
 
+from git_wraper import split_diff_chunks, extract_diff_filename
+
 download_loader("GithubRepositoryReader")
 
 from llama_hub.github_repo import GithubClient, GithubRepositoryReader
@@ -58,3 +60,21 @@ class DocsQueryEngine:
         query_engine = index.as_query_engine()
         response = query_engine.query(f"Stipulate all endpoints with example input and output?")
         return response
+
+    def make_qarequest_to_repo(self, request):
+        print(request)
+
+        chunks = split_diff_chunks(request)
+
+        for chunk in chunks:
+
+            print(extract_diff_filename(chunk))
+
+
+        # if self.docs is None:
+        #     self.load_data()
+        #
+        # index = GPTVectorStoreIndex.from_documents(self.docs)
+        # query_engine = index.as_query_engine()
+        # response = query_engine.query(request)
+        # return response

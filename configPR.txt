@@ -1,0 +1,6 @@
+[variables]
+owner=jdi-testing
+repo=jdi-light
+file=java
+filter_dirs=["jdi-bdd","jdi-bdd-tests","jdi-eyes-demo","jdi-light-angular-tests-with-mocks","jdi-light-applitools-tests","jdi-light-bootstrap","jdi-light-bootstrap-tests","jdi-light-eyes","jdi-light-html","jdi-light-html-selenium3","jdi-light-html-tests","jdi-light-material-ui","jdi-light-material-ui-tests","jdi-light-mobile","jdi-light-mobile-bootstrap-web-tests","jdi-light-mobile-html-web-tests","jdi-light-mobile-selenium3","jdi-light-mobile-selenium3-tests","jdi-light-mobile-tests","jdi-light-selenium3","jdi-light-vuetify","jdi-light-vuetify-tests","test-examples","test-templates"]
+branch=master
